@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height:800PX;
+            width:800PX;
+            background-image: linear-gradient(yellow,red);
+            border: 3px solid black;
+            display: flex;
+            gap:40px;
+            flex-wrap: wrap;
+            align-content: center;
+            padding:20px 20px 20px 60px;
+
+            
+        }
+        .h{
+            height:650PX;
+            width: 150px;
+            background-color: aliceblue;
+            border: 2px dashed black;
+            align-content: center;
+            
+         
+           
+        }p{
+            text-align: justify;
+            padding:3px 3px 3px 3px;
+        
+
+        }
+        .container1{
+            height: 250px;
+            width:900px;
+            background-image: linear-gradient(blue,yellow);
+            display: flex;
+            gap:5px;
+            padding: 40px 5px 5px 5px;
+            border: 5px dotted red;
+           
+        }
+        .container2{
+            height: 250px;
+            width:1200px;
+            background-image: linear-gradient(green,yellow);
+            display: flex;
+            gap:5px;
+            padding: 40px 5px 5px 5px;
+            border: 5px dotted white;
+        }
+        
+
+        .q{
+            height:200px;
+            width: 600px;
+            border: 2px solid purple;
+           
+            
+        }
+        .hello{
+            height: 600px;
+            width: 500px;
+            border: 3px solid black;
+            background-image: url("../images/w-qjCHPZbeXCQ-unsplash.jpg");
+
+        }
+        .bii{height: 600px;
+            width: 500px;
+            border: 3px solid black;
+            background-image: url("../images/w-qjCHPZbeXCQ-unsplash.jpg");
+
+
+        }.bii .a,.b,.c{
+            display: flex;
+            
+            
+        }
+        .bii .a,.c{
+            justify-content:space-between;
+        }
+        .bii .b
+        {
+         justify-content: center;
+         padding: 150px;
+         gap:100px;
+           
+            
+        }
+        
+        
+        
+        
+    </style>
+
+</head>
+<body><h1>using absolute position</h1>
+    <div class="hello">
+        <div style="position: absolute;top:325px;"><img src="../images/cool-css-backgrounds.jpg"height="100"width="100"></div> 
+        <div style="position: absolute;top:325px;left: 410px;"><img src="../images/cool-css-backgrounds.jpg"height="100"width="100"></div> 
+        <div style="position: absolute;"><img src="../images/cool-css-backgrounds.jpg"height="100"width="100"></div> 
+        <div style="position: absolute;left:410px;"><img src="../images/cool-css-backgrounds.jpg"height="100"width="100"></div>
+        <div style="position: absolute;top:325px;left:210px;"><img src="../images/cool-css-backgrounds.jpg"height="100"width="100"></div>
+        <div style="position: absolute;top:585px"><img src="../images/cool-css-backgrounds.jpg"height="100"width="100"></div>
+        <div style="position: absolute;top:585px;left:410px;"><img src="../images/cool-css-backgrounds.jpg"height="100"width="100"></div>
+</div><br>
+<h1>using relative position</h1>
+<div class="hello">
+    
+    <div style="position: relative;"><img src="../images/cool-css-backgrounds.jpg"height="100"width="100"></div>
+    <div style="position: relative;top:-105px;left: 400px;"><img src="../images/cool-css-backgrounds.jpg"height="100"width="100"></div>
+    <div style="position: relative;top: 290px;"><img src="../images/cool-css-backgrounds.jpg"height="100"width="100"></div> 
+    <div style="position: relative;top:-85px;"><img src="../images/cool-css-backgrounds.jpg"height="100"width="100"></div>
+    <div style="position: relative;top: 85px;left: 400px;"><img src="../images/cool-css-backgrounds.jpg"height="100"width="100"></div>
+    <div style="position: relative;top:-290px;left: 400px;"><img src="../images/cool-css-backgrounds.jpg"height="100"width="100"></div>
+    <div style="position: relative;top:-400px;left: 200px;"><img src="../images/cool-css-backgrounds.jpg"height="100"width="100"></div>
+    </div><hr>
+    <h1>using flex </h1>
+    <div class="bii">
+        <div class="a">
+            <img src="../images/cool-css-backgrounds.jpg"height="100"width="100">
+            <img class="s"src="../images/cool-css-backgrounds.jpg"height="100"width="100"></div>
+        <div class="b"><img src="../images/cool-css-backgrounds.jpg"height="100"width="100">
+            <img src="../images/cool-css-backgrounds.jpg"height="100"width="100">
+            <img src="../images/cool-css-backgrounds.jpg"height="100"width="100"></div>
+        <div class="c"><img src="../images/cool-css-backgrounds.jpg"height="100"width="100">
+            <img src="../images/cool-css-backgrounds.jpg"height="100"width="100">
+            </div>
+        </div><hr>
+        <h1>4 columns</h1>
+    
+    <div class="container"> 
+    <div class="h">
+        <h3 style="text-align: center;">HTML</h3>
+        <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+
+Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages</p>
+       
+    </div>
+    <div class="h">
+        <h3 style="text-align: center;">CSS</h3>
+        <P>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]
+
+            CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts.[3] This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics;    </P>
+    </div>
+    <div class="h">
+       <h3 style="text-align: center;">JavaScript</h3>
+       <P>JavaScript is a high-level programming language that follows the ECMAScript standard. It was originally designed as a scripting language for websites but became widely adopted as a general-purpose programming language, and is currently the most popular programming language in use.[1] JavaScript is usually found running in a web browser as interactive or automated content, ranging from popup messages and live clocks to large web applications. JavaScript is also commonly used in server-side programming </P>
+     </div>
+    <div class="h">
+        <h3 style="text-align: center;">ANGULAR</h3>
+        <P>Angular 2.0 was announced at the ng-Europe conference 22–23 October 2014.[8][9] The drastic changes in the 2.0 version created considerable controversy among developers.[10] On April 30, 2015, the Angular developers announced that Angular 2 moved from Alpha to Developer Preview.[11] Angular 2 moved to Beta in December 2015,[12] and the first release candidate was published in May 2016.[13] The final version was released on 14 September 2016.</P>
+    </div>
+
+    </div>
+    <hr>
+    <h1>5 columns</h1> 
+
+    <div class="container1">
+        <div class="q">
+            <p style="font-size: 70px; text-align: center;">&#128512;</p> </div>
+        <div class="q">
+            <p style="font-size: 70px; text-align: center;">&#128513;</p>
+        </div>
+        <div class="q">
+            <p style="font-size: 70px; text-align: center;">&#128514;</p>
+        </div>
+        <div class="q">
+            <p style="font-size: 70px; text-align: center;">&#128515;</p>
+        </div>
+        <div class="q">
+            <p style="font-size: 70px; text-align: center;">&#128517;</p>
+        </div>
+        
+    </div>
+    <hr>
+    <h1>6 columns</h1> 
+
+    <div class="container2">
+        <div class="q">
+            <img style="font-size: 70px; padding: 30px;" src="../images/2.jpeg" ></img> </div>
+        <div class="q">
+            <img style="font-size: 70px; padding: 30px" src="../images/1.jpeg"></img>
+            </div>
+        <div class="q">
+            <img style="font-size: 70px; padding: 30px" src="../images/3.jpeg"></img>    
+        </div>
+        <div class="q">
+            <img style="font-size: 70px; padding: 30px" src="../images/1.jpeg"></img>
+        </div>
+        <div class="q">
+            <img style="font-size: 70px; padding: 30px" src="../images/2.jpeg"></img> 
+        </div>
+        <div class="q">
+            <img style="font-size: 70px; padding: 30px" src="../images/3.jpeg"></img> 
+        </div>
+    </div>
+    <hr>
+     
+    
+</body>
+</html>
