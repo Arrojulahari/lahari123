@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var num=+prompt("enter a number");
+        if(num%2===0){
+            alert(num+ "is an even number");
+        }
+        else{
+            alert(num+""+" is an odd number")
+        }
+
+    //    -------------------------------------------------------------- 
+        var num1=+prompt("enter first number");
+        if(num1>0){
+        var num2=+prompt("enter second number");
+        var num3=+prompt("enter third number");
+        if(num1>num2&&num1>num3){
+            alert(num1+""+"is greatest number");
+        }
+        else if(num2>num1&&num2>num3){
+            alert(num2+""+"is greatest number");  
+        }
+        else if(num3>num1&&num3>num2){
+            alert(num3+""+"is greatest number");  
+        }
+        else if(num1===num2&&num2===num3){
+            alert("all are equal");
+        }
+    } else{
+        alert("negative input");
+
+    }
+// ------------------------------------------------------------------
+        var hour=+prompt("enter time")
+        if(hour<6){
+            alert("its too early");
+        }
+        else if(hour>=6&&hour<=11){
+            alert("good morning");
+        }
+        else if(hour>=12&&hour<=17){
+            alert("good afternoon");
+        }
+        else if(hour>=18&&hour<=23){
+            alert("good evening");
+        }
+        else{
+            alert("good night");
+        }
+    //    ------------------------------------------------------------------------------    
+        var color=prompt("enter a color")
+        switch(color){
+            case "red":alert("red signal indicates stop");
+            break;
+            case "yellow":alert("yellow signals indicates ");
+            break;
+            case "green":alert("green signal indicates you can go");
+            }
+// ----------------------------------------------------------------------------------------------
+         var month=prompt("enter a month")
+         switch(month){
+            case "january":alert("its a winter season");
+            
+            case "february":alert("its a winter season");
+            break;
+            case "march":alert("its a spring season");
+            break;
+            case "april":alert("its a spring season");
+            break;
+            case "may":alert("its a spring season");
+            break;
+            case "june":alert("its a summer season");
+            break;
+            case "july":alert("its a summer season");
+            break;
+            case "august":alert("its a summer season");
+            break;
+            case "september":alert("its a autumn season");
+            break;
+            case "october":alert("its a autumn season");
+            break;
+            case "november":alert("its a autumn season");
+            break;
+            case "december":alert("its a winter season");
+            }
+// -------------------------------------------------------------------------------
+        var menu=prompt("enter a number to select an option from menu");
+        switch(menu){
+            case "1":alert("chicken lolipop");
+            break;
+            case "2":alert("chicken 65");
+            break;
+            case "3":alert("grilled chicken");
+            break;
+            case "4":alert("chicken manchurya");
+            break;
+            case "5":alert("noodles");0.
+            break;
+            case "6":alert("sandwich");
+            break;
+            default:alert("sorry, its not available");
+
+        }
+// ----------------------------------------------------------------------------
+var currency=+prompt("enter currency");
+var exchangerate=+prompt("enter current exchange rate");
+var currencycode=prompt("enter currency code");
+var u=currency*exchangerate;
+alert(currency+ ""+"USD is equal to"+""+ u+ "EUR");
+// --------------------------------------------------------------------------------
+var year=+prompt("enter an year");
+if(year%400===0){
+    alert(year+ ""+"is a leap year");
+}
+    else if(year%100===0){
+        alert(year+ ""+"is not a leap year");
+    }
+    else if(year%4===0){
+        alert(year+ ""+"is a leap year"); 
+    }
+else{
+    alert("not a leap year");
+}
+
+</script>
+</body>
+</html>
